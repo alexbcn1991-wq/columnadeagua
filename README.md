@@ -5,20 +5,21 @@ Web de contenido y afiliación sobre acuariofilia marina. HTML estático, sin de
 ## Estructura
 
 ```
-index.html                              Home
-404.html                                Página de error
-CNAME                                   Dominio personalizado (GitHub Pages)
-.nojekyll                               Desactiva el procesado Jekyll
-robots.txt                              Indexación + referencia al sitemap
-sitemap.xml                             Añadir cada URL nueva aquí
-assets/style.css                        Hoja de estilos única de todo el sitio
-equipo/<slug>/index.html                Análisis de producto
-guias/<slug>/index.html                 Guías (pendiente)
-especies/<slug>/index.html              Fichas de especie (pipeline, pendiente)
-calculadoras/<slug>/index.html          Herramientas (pendiente)
-sobre-columna-de-agua/index.html        Método y divulgación
-aviso-legal-y-privacidad/index.html     Legal
-contacto/index.html                     Contacto
+index.html                                   Home
+404.html                                     Página de error
+CNAME                                        Dominio personalizado
+.nojekyll                                    Desactiva el procesado Jekyll
+robots.txt  ·  sitemap.xml                   Indexación
+assets/style.css                             Hoja de estilos global
+assets/sequence.css                          Estilos del módulo de scroll (solo la guía de montaje)
+assets/favicon.svg                           Icono del sitio
+equipo/index.html                            Hub de equipo
+equipo/<slug>/index.html                     Análisis de producto
+guias/index.html                             Hub de guías
+guias/montar-nano-reef-paso-a-paso/          Guía con secuencia animada
+especies/  ·  calculadoras/                  Pendientes
+sobre-columna-de-agua/  ·  contacto/         Método y contacto
+aviso-legal-y-privacidad/                    Legal
 ```
 
 Cada página nueva es una carpeta con `index.html` dentro, para que la URL acabe en barra y sin extensión.
