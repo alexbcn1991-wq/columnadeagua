@@ -68,9 +68,10 @@ footer .brand .word b,footer .brand .word i{color:#2C3E46}
 .tr b{display:block;font-size:13.5px;font-weight:600;color:var(--ink);line-height:1.4}
 .tr span{display:block;font-size:12.5px;color:var(--muted);line-height:1.45;margin-top:2px}
 
-.showcase{position:relative;aspect-ratio:5/4;display:flex;align-items:center;justify-content:center;padding:48px}
+.showcase{position:relative;aspect-ratio:5/4;display:flex;align-items:center;justify-content:center;padding:14px}
 .showcase::before{content:"";position:absolute;inset:0;border-radius:26px;background:linear-gradient(150deg,#EAF4F8 0%,#D7EAF2 55%,#C3DFEC 100%)}
 .showcase .art{position:relative;z-index:1;width:52%}
+.showcase img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover;border-radius:20px;display:block;box-shadow:0 18px 40px -22px rgba(11,47,63,.55)}
 .floatcard{position:absolute;right:-14px;bottom:24px;z-index:2;background:#fff;border-radius:14px;box-shadow:0 4px 24px rgba(0,0,0,.10);padding:13px 16px;display:flex;align-items:center;gap:18px}
 .floatcard b{display:block;font-size:13.5px;font-weight:600;color:var(--ink)}
 .floatcard span{display:block;font-family:var(--mono);font-size:11.5px;color:var(--muted);margin-top:2px}
@@ -134,10 +135,10 @@ section{padding:88px 0}
 .form button:hover{background:var(--blue-deep)}
 
 /* footer */
-footer{border-top:1px solid var(--line);padding:72px 0 48px;margin-top:40px}
+footer{border-top:1px solid var(--line);padding:80px 0 52px;margin-top:88px}
 .f-in{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:44px 36px}
 @media(max-width:860px){.f-in{grid-template-columns:1fr 1fr}}
-.f-brand p{margin:18px 0 24px;font-size:14.5px;color:var(--muted);max-width:30ch;line-height:1.6}
+.f-brand p{margin:18px 0 0;font-size:14.5px;color:var(--muted);max-width:30ch;line-height:1.6}
 .socials{display:flex;gap:9px;list-style:none;margin:0;padding:0}
 .socials a{width:34px;height:34px;border-radius:999px;background:var(--soft);display:flex;align-items:center;justify-content:center;transition:background .18s}
 .socials a:hover{background:#E6E6E2}
@@ -196,11 +197,15 @@ footer{border-top:1px solid var(--line);padding:72px 0 48px;margin-top:40px}
 
 /* separación extra entre bloques encadenados */
 section + section{padding-top:0}
+#kit{padding-top:44px}
 section > .center:first-child{padding-top:16px}
-.kit{margin-top:8px}
+.kit{margin-top:0}
 @media(max-width:700px){
   section{padding:60px 0}
+  #kit{padding-top:32px}
+  footer{margin-top:60px}
   section + section{padding-top:0}
+#kit{padding-top:44px}
   .card .shot{padding:26px}
   .news{padding:64px 22px;border-radius:18px}
   .showcase{padding:32px;aspect-ratio:4/3}
