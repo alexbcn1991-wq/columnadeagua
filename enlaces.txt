@@ -1,0 +1,103 @@
+# Enlaces de afiliado — Columna de Agua
+# Pega el ASIN (10 caracteres) o la URL completa de Amazon.es después del '='
+# Deja vacío el que aún no tengas: se queda como está.
+# Tag: alex19910c-21
+
+
+## index.html
+# Refractómetro con compensación
+# buscar: refractometro acuario marino ATC salinidad
+index.html|0 = B07CB5KDYL
+
+# Pantalla led de espectro completo
+# buscar: pantalla led acuario marino regulable 50W
+index.html|1 = B0BQMHPCTX
+
+# Skimmer colgado sin sump
+# buscar: skimmer acuario marino colgado 200 litros
+index.html|2 = B07DNTJPL6
+
+# Kit de test de KH, calcio y magnesio
+# buscar: kit test KH calcio magnesio acuario marino
+index.html|3 = B00L5I8N64
+
+# Sal sintética para arrecife
+# buscar: sal acuario marino cubo 22 kg arrecife
+index.html|4 = B00BK0GR8I
+
+# Bomba de movimiento controlable
+# buscar: bomba movimiento acuario marino controlable
+index.html|5 = B088TPJM58
+
+
+## equipo/kits-test-agua-acuario-marino/index.html
+# Kit combinado de KH, calcio y magnesio
+# buscar: test KH calcio magnesio acuario marino reactivo liquido
+equipo/kits-test-agua-acuario-marino/index.html|0 = B0FQ63D94J
+
+# Test de amonio y nitrito
+# buscar: test amonio nitrito acuario marino
+equipo/kits-test-agua-acuario-marino/index.html|1 = B074FH11FQ
+
+# Tiras multiparámetro
+# buscar: tiras test acuario marino multiparametro
+equipo/kits-test-agua-acuario-marino/index.html|2 = B09MW354JK
+
+
+## equipo/mejores-skimmers-acuario-marino/index.html
+# Skimmer colgado para acuarios de hasta 200 litros
+# buscar: skimmer colgado acuario marino 200 litros (Bubble Magus)
+equipo/mejores-skimmers-acuario-marino/index.html|0 = B07X2MLF96
+
+# Skimmer interno de sump
+# buscar: skimmer interno sump acuario marino 300 litros
+equipo/mejores-skimmers-acuario-marino/index.html|1 = B003WEZAVU
+
+
+## equipo/osmosis-inversa-para-acuario/index.html
+# Equipo de osmosis de 100 gpd con medidor de TDS
+# buscar: osmosis inversa acuario 100 gpd medidor TDS
+equipo/osmosis-inversa-para-acuario/index.html|0 = B08BZTC4HT
+
+# Equipo con etapa de resina desionizadora
+# buscar: osmosis inversa acuario 5 etapas resina desionizadora
+equipo/osmosis-inversa-para-acuario/index.html|1 = B00439MYYE
+
+
+## equipo/pantallas-led-nano-reef/index.html
+# Pantalla led regulable de 50 W con espectro completo
+# buscar: pantalla led acuario marino 50W regulable app sin ventilador
+equipo/pantallas-led-nano-reef/index.html|0 = B0DR5KX2W5
+
+# Pantalla de entrada de 30 W
+# buscar: pantalla led acuario marino 30W entrada
+equipo/pantallas-led-nano-reef/index.html|1 = B0D1MW4HK9
+
+# Pantalla de gama alta por canales
+# buscar: pantalla led acuario marino canales SPS 120W
+equipo/pantallas-led-nano-reef/index.html|2 = B0F1CX4BC8
+
+
+## equipo/refractometro-o-densimetro/index.html
+# Refractómetro con compensación automática de temperatura
+# buscar: refractometro salinidad ATC 1.000-1.070 acuario marino
+equipo/refractometro-o-densimetro/index.html|0 = B07CB5KDYL
+
+# Densímetro de brazo oscilante
+# buscar: densimetro brazo oscilante acuario marino
+equipo/refractometro-o-densimetro/index.html|1 = B018LRO1SU
+
+
+## equipo/sal-acuario-marino-comparativa/index.html
+# Sal de valores naturales, cubo de 22 kg
+# buscar: sal acuario marino 22 kg valores naturales (Tropic Marin / Seachem / Sera)
+equipo/sal-acuario-marino-comparativa/index.html|0 = B01HIASJ7K
+
+# Sal de alcalinidad elevada para coral duro
+# buscar: sal acuario marino alcalinidad elevada coral cubo
+equipo/sal-acuario-marino-comparativa/index.html|1 = B000YIYTIC
+
+# Bolsa pequeña, de 4 kg
+# buscar: sal acuario marino bolsa 4 kg
+equipo/sal-acuario-marino-comparativa/index.html|2 = B001JT415Q
+
