@@ -91,6 +91,8 @@ section{padding:88px 0}
 .card .shot{position:relative;background:linear-gradient(160deg,#F7FAFB,#E9F2F6);border:1px solid var(--line);border-radius:18px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;padding:34px;overflow:hidden;transition:border-color .2s,transform .2s,box-shadow .2s}
 .card:hover .shot{border-color:var(--blue);transform:translateY(-3px);box-shadow:0 10px 30px -18px rgba(27,124,166,.5)}
 .card .shot .art{width:48%;max-height:48%}
+.card .shot img{width:100%;height:100%;object-fit:cover;border-radius:17px;display:block}
+.card .shot:has(img){padding:0}
 .card .fav{position:absolute;top:14px;right:14px;width:32px;height:32px;border-radius:999px;background:#fff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center}
 .card .fav svg{width:14px;height:14px;stroke:var(--ink);fill:none;stroke-width:1.7}
 .card .meta{margin-top:20px}
@@ -305,3 +307,27 @@ section > .center:first-child{padding-top:16px}
 .diagrama a:hover rect{opacity:.72}
 .diagrama figcaption{margin-top:14px;font-size:14px;line-height:1.6;color:var(--muted);font-family:var(--sans)}
 @media(max-width:600px){.diagrama .d-t{font-size:15px}.diagrama .d-s{font-size:13px}}
+
+/* tarjetas de método con gradiente */
+.method{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+a.gcard{text-decoration:none}
+.gcard{position:relative;display:flex;flex-direction:column;overflow:hidden;border-radius:20px;padding:32px;border:1px solid var(--line);transition:transform .3s cubic-bezier(.2,.7,.3,1),box-shadow .3s}
+.gcard:hover{transform:translateY(-5px);box-shadow:0 22px 44px -26px rgba(11,47,63,.42)}
+.g-blue{background:linear-gradient(140deg,#E7F2F7 0%,#CFE6F0 100%)}
+.g-teal{background:linear-gradient(140deg,#E4F5F2 0%,#C9EAE4 100%)}
+.g-slate{background:linear-gradient(140deg,#F0F2F3 0%,#DDE2E5 100%)}
+.gbadge{display:inline-flex;align-items:center;gap:8px;width:fit-content;background:rgba(255,255,255,.66);backdrop-filter:blur(6px);border-radius:999px;padding:6px 14px;font-size:12.5px;font-weight:500;color:#123F52;margin-bottom:20px;position:relative;z-index:2}
+.gbadge i{width:8px;height:8px;border-radius:50%;flex:none}
+.gcard h3{position:relative;z-index:2;font-size:22px;font-weight:700;letter-spacing:-.03em;color:var(--ink);margin:0 0 10px;line-height:1.2}
+.gcard p{position:relative;z-index:2;font-size:15px;line-height:1.65;color:#3A474F;margin:0 0 26px;max-width:30ch;flex:1}
+.gcta{position:relative;z-index:2;display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--ink);width:fit-content}
+.gcta svg{width:16px;height:16px;transition:transform .3s}
+.gcard:hover .gcta svg{transform:translateX(5px)}
+.gart{position:absolute;right:-34px;bottom:-34px;width:190px;height:190px;color:#123F52;opacity:.10;pointer-events:none;transition:transform .45s cubic-bezier(.2,.7,.3,1),opacity .3s;z-index:1}
+.gart svg{width:100%;height:100%}
+.gcard:hover .gart{transform:scale(1.12) rotate(4deg);opacity:.16}
+@media(prefers-reduced-motion:reduce){.gcard,.gart,.gcta svg{transition:none}.gcard:hover{transform:none}.gcard:hover .gart{transform:none}}
+@media(max-width:700px){.gcard{padding:26px}.gart{width:150px;height:150px;right:-26px;bottom:-26px}}
+
+.gcard .gcta{cursor:pointer}
+.gcard h3{max-width:16ch}
