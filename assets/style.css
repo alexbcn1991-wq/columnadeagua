@@ -295,3 +295,13 @@ section > .center:first-child{padding-top:16px}
 /* en las filas del kit, más compacto */
 .row .gbtn{min-width:132px;padding:11px 20px;font-size:13.5px;border-radius:9px}
 @media(prefers-reduced-motion:reduce){.gbtn{transition:none}.gbtn:hover{transform:none}}
+
+/* diagramas */
+.diagrama{margin:40px 0;padding:0}
+.diagrama svg{width:100%;height:auto;display:block;background:var(--soft-2);border:1px solid var(--line);border-radius:16px;padding:12px 0}
+.diagrama .d-t{font-family:var(--sans);font-size:14px;font-weight:600;fill:var(--ink)}
+.diagrama .d-s{font-family:var(--sans);font-size:12px;fill:var(--muted)}
+.diagrama a rect{transition:opacity .18s}
+.diagrama a:hover rect{opacity:.72}
+.diagrama figcaption{margin-top:14px;font-size:14px;line-height:1.6;color:var(--muted);font-family:var(--sans)}
+@media(max-width:600px){.diagrama .d-t{font-size:15px}.diagrama .d-s{font-size:13px}}
