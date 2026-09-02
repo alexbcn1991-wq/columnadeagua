@@ -101,3 +101,14 @@ equipo/sal-acuario-marino-comparativa/index.html|1 = B000YIYTIC
 # buscar: sal acuario marino bolsa 4 kg
 equipo/sal-acuario-marino-comparativa/index.html|2 = B001JT415Q
 
+
+
+## equipo/acuario-nano-54-litros/index.html
+# Nobleza — acuario 54 L todo en uno
+equipo/acuario-nano-54-litros/index.html|0 = B0CRKW5HH6
+
+# Marina 15256 — kit 38 L con led
+equipo/acuario-nano-54-litros/index.html|1 = B0173I55JM
+
+# Tetra Starter Line LED 54 L (incluye calentador)
+equipo/acuario-nano-54-litros/index.html|2 = B09RPD8HGL
