@@ -340,3 +340,41 @@ a.gcard{text-decoration:none}
 a.floatcard{text-decoration:none;transition:transform .2s,box-shadow .2s}
 a.floatcard:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(0,0,0,.16)}
 a.floatcard .heart svg{stroke:var(--blue);fill:none}
+
+/* ===== tarjeta con aureola de gradiente ===== */
+.bggrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:30px 26px}
+.bgcard{position:relative;padding:2px;border-radius:24px;isolation:isolate}
+.bgcard::before,.bgcard::after{
+  content:"";position:absolute;inset:0;border-radius:24px;z-index:-1;
+  background:
+    radial-gradient(circle farthest-side at 0 100%, #35ACB4, transparent),
+    radial-gradient(circle farthest-side at 100% 0, #1B7CA6, transparent),
+    radial-gradient(circle farthest-side at 100% 100%, #7FD4CE, transparent),
+    radial-gradient(circle farthest-side at 0 0, #0F3B4C, #0B2733);
+  background-size:400% 400%;
+  animation:bgmove 14s ease infinite;
+}
+.bgcard::before{filter:blur(16px);opacity:0;transition:opacity .55s ease}
+.bgcard::after{opacity:.34;transition:opacity .4s ease}
+.bgcard:hover::before{opacity:.62}
+.bgcard:hover::after{opacity:1}
+@keyframes bgmove{0%{background-position:0 50%}50%{background-position:100% 50%}100%{background-position:0 50%}}
+
+.bgcard-in{position:relative;background:#fff;border-radius:22px;padding:16px 20px 20px;display:flex;flex-direction:column;height:100%}
+.bgshot{display:block;border-radius:15px;overflow:hidden;margin-bottom:16px}
+.bgshot img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;transition:transform .5s cubic-bezier(.2,.7,.3,1)}
+.bgcard:hover .bgshot img{transform:scale(1.045)}
+.bgcard-in .cat{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
+.bgcard-in h3{font-size:18px;font-weight:600;letter-spacing:-.02em;margin:8px 0 8px;line-height:1.3}
+.bgcard-in h3 a{color:var(--ink)}
+.bgcard-in h3 a:hover{color:var(--blue)}
+.bgcard-in p{font-size:14.5px;line-height:1.6;color:var(--muted);margin:0 0 20px;flex:1}
+.bgacts{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.bgbuy{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:#fff;border-radius:999px;padding:7px 7px 7px 16px;font-size:12.5px;font-weight:700;transition:background .2s}
+.bgbuy:hover{background:var(--blue-deep)}
+.bgbuy .pill{background:rgba(255,255,255,.16);border-radius:999px;padding:3px 10px;font-family:var(--mono);font-size:10.5px;font-weight:500;letter-spacing:.02em;white-space:nowrap}
+.bgread{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--blue)}
+.bgread svg{width:14px;height:14px;transition:transform .3s}
+.bgcard:hover .bgread svg{transform:translateX(4px)}
+@media(prefers-reduced-motion:reduce){.bgcard::before,.bgcard::after{animation:none}.bgshot img,.bgread svg{transition:none}}
+@media(max-width:700px){.bggrid{gap:24px}.bgcard-in{padding:14px 16px 18px}}
