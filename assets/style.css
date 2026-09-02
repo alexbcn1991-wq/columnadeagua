@@ -419,3 +419,24 @@ a.floatcard .heart svg{stroke:var(--blue);fill:none}
 .tldr::before{content:"";position:absolute;left:0;top:22px;bottom:22px;width:3px;border-radius:0 3px 3px 0;background:linear-gradient(180deg,var(--teal),var(--blue))}
 .tldr p{margin:10px 0 0;font-size:18px;line-height:1.7;color:var(--ink)}
 .tldr .micro{color:var(--blue)}
+
+/* fichas de especie */
+.espgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.espgrid .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px 24px;transition:border-color .2s,transform .2s,box-shadow .2s}
+.espgrid .card:hover{border-color:var(--blue);transform:translateY(-3px);box-shadow:0 16px 34px -24px rgba(11,47,63,.4)}
+.espgrid .card .meta{margin:0}
+.espgrid .card .line{margin-top:9px;align-items:baseline}
+.espgrid .card h3{font-size:18px;font-weight:600;letter-spacing:-.02em;color:var(--ink);margin:0}
+.espgrid .card .spec{font-family:var(--mono);font-size:12px;color:var(--blue)}
+.esp-desc{margin:11px 0 0;font-size:14px;line-height:1.55;color:var(--muted)}
+
+.espshot{display:block;position:relative;width:100%;padding-top:66%;overflow:hidden;border-radius:12px;margin:-4px 0 16px;background:var(--soft-2)}
+.espshot img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s cubic-bezier(.2,.7,.3,1)}
+.espgrid .card:hover .espshot img{transform:scale(1.05)}
+
+/* miniatura en las tarjetas de especie */
+.espgrid .card{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.espshot{display:block;position:relative;width:100%;padding-top:66%;overflow:hidden;background:var(--soft-2)}
+.espshot img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s cubic-bezier(.2,.7,.3,1)}
+.espgrid .card:hover .espshot img{transform:scale(1.05)}
+.espgrid .card .meta{padding:20px 22px 22px}
