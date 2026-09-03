@@ -47,7 +47,7 @@ equipo/kits-test-agua-acuario-marino/index.html|2 = B09MW354JK
 ## equipo/mejores-skimmers-acuario-marino/index.html
 # Skimmer colgado para acuarios de hasta 200 litros
 # buscar: skimmer colgado acuario marino 200 litros (Bubble Magus)
-equipo/mejores-skimmers-acuario-marino/index.html|0 = B07X2MLF96
+equipo/mejores-skimmers-acuario-marino/index.html|0 = B07DNTJPL6
 
 # Skimmer interno de sump
 # buscar: skimmer interno sump acuario marino 300 litros
@@ -112,3 +112,18 @@ equipo/acuario-nano-54-litros/index.html|1 = B0173I55JM
 
 # Tetra Starter Line LED 54 L (incluye calentador)
 equipo/acuario-nano-54-litros/index.html|2 = B09RPD8HGL
+
+
+## Añadidos posteriormente
+# Sifón limpiafondos (mantenimiento semanal)
+guias/mantenimiento-semanal-acuario-marino/index.html|0 = B07X2MLF96
+# Bomba de aire (mantenimiento semanal)
+guias/mantenimiento-semanal-acuario-marino/index.html|1 = B08VWQ9VQG
+# Filtro de esponja (cuarentena)
+guias/acuario-de-cuarentena/index.html|0 = B09HJSG6WT
+# Bomba de aire (cuarentena)
+guias/acuario-de-cuarentena/index.html|1 = B08VWQ9VQG
+# Recipiente 4 L (cuarentena)
+guias/acuario-de-cuarentena/index.html|2 = B00F5ZZEM4
+# Filtro interno 300 l/h (cuarentena)
+guias/acuario-de-cuarentena/index.html|3 = B09T73KFLX
