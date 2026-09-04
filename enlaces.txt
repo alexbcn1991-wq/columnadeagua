@@ -127,3 +127,14 @@ guias/acuario-de-cuarentena/index.html|1 = B08VWQ9VQG
 guias/acuario-de-cuarentena/index.html|2 = B00F5ZZEM4
 # Filtro interno 300 l/h (cuarentena)
 guias/acuario-de-cuarentena/index.html|3 = B09T73KFLX
+
+# Calentador 50 W (comprar dos)
+equipo/calentadores-acuario-marino/index.html|0 = B0CWYD792Z
+# Termómetro digital
+equipo/calentadores-acuario-marino/index.html|1 = B01A0TMS6Y
+# Roca de arrecife aragonito 20 kg
+equipo/roca-y-arena-acuario-marino/index.html|0 = B08HN9TMNW
+# Arena de aragonito 3,5 kg
+equipo/roca-y-arena-acuario-marino/index.html|1 = B00GPRSN2Y
+# Rellenadora ATO doble sensor óptico
+equipo/rellenadora-automatica-ato/index.html|0 = B09YVP3L22
