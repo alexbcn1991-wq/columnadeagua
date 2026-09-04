@@ -521,3 +521,10 @@ section + section{padding-top:0}
 .articulo-hero img{max-height:520px;object-fit:cover}
 .showcase img{max-height:560px}
 .article img{max-width:100%;height:auto}
+
+/* rejilla de especies de la home: 4 + 4 */
+.espgrid-8{grid-template-columns:repeat(4,1fr)}
+@media(max-width:1000px){.espgrid-8{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.espgrid-8{grid-template-columns:1fr}}
+.espshot-vacia{display:block;position:relative;width:100%;padding-top:66%;background:linear-gradient(150deg,#EAF3F7,#D8E9F0)}
+.espshot-vacia::after{content:"";position:absolute;left:50%;top:50%;width:38%;height:2px;transform:translate(-50%,-50%);border-radius:2px;background:var(--blue);opacity:.28}
