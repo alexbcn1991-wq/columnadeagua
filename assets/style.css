@@ -570,10 +570,10 @@ section + section{padding-top:0}
 
 /* ===== marca ===== */
 .brand{display:inline-flex;align-items:center;flex:none}
-.brand img{height:72px;width:auto;display:block}
-footer .brand img{height:88px}
-@media(max-width:960px){.brand img{height:60px}.nav-in{height:88px}}
-@media(max-width:520px){.brand img{height:52px}.nav-in{height:76px}}
+.brand img{height:96px;width:auto;display:block}
+footer .brand img{height:110px}
+@media(max-width:960px){.brand img{height:76px}.nav-in{height:104px}footer .brand img{height:88px}}
+@media(max-width:520px){.brand img{height:62px}.nav-in{height:86px}footer .brand img{height:72px}}
 
 /* ===== infografía interactiva ===== */
 .eq{margin:0;padding:0}
@@ -614,3 +614,8 @@ footer .brand img{height:88px}
   .eq-wrap{border-radius:14px}
   .eq figcaption{text-align:left}
 }
+
+/* seis pestañas: que quepan bien */
+.gm-tabs{flex-wrap:wrap;justify-content:center;max-width:100%}
+@media(max-width:900px){.gm-tabs .gm-face,.gm-tabs .gm-back{padding:8px 13px;font-size:13px}}
+@media(max-width:560px){.gm-tabs .gm-face svg,.gm-tabs .gm-back svg{display:none}.gm-tabs .gm-face,.gm-tabs .gm-back{padding:8px 11px;font-size:12.5px}}
