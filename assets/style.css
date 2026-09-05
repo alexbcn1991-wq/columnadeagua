@@ -528,3 +528,6 @@ section + section{padding-top:0}
 @media(max-width:560px){.espgrid-8{grid-template-columns:1fr}}
 .espshot-vacia{display:block;position:relative;width:100%;padding-top:66%;background:linear-gradient(150deg,#EAF3F7,#D8E9F0)}
 .espshot-vacia::after{content:"";position:absolute;left:50%;top:50%;width:38%;height:2px;transform:translate(-50%,-50%);border-radius:2px;background:var(--blue);opacity:.28}
+
+.bgshot-vacia{display:block;position:relative;width:100%;padding-top:75%;border-radius:11px;margin-bottom:13px;background:linear-gradient(150deg,#EAF3F7,#D3E6EF)}
+.bgshot-vacia::after{content:"";position:absolute;left:50%;top:50%;width:34%;height:2px;transform:translate(-50%,-50%);border-radius:2px;background:var(--blue);opacity:.28}
