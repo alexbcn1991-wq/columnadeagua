@@ -535,6 +535,24 @@ footer{border-top:1px solid var(--line);padding:clamp(44px,6vw,70px) 0 40px;marg
   .fcol h4{margin-bottom:10px}
 }
 
+/* ---------- 11. AVISO DE COOKIES ---------- */
+.cookies{position:fixed;left:var(--pad);right:var(--pad);bottom:var(--pad);z-index:120;max-width:520px;margin-left:auto;
+  background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 22px;
+  box-shadow:0 24px 50px -26px rgba(10,26,34,.45);opacity:0;transform:translateY(14px);
+  transition:opacity .32s ease,transform .32s cubic-bezier(.2,.8,.3,1)}
+.cookies.on{opacity:1;transform:none}
+.cookies p{margin:0 0 16px;font-size:14px;line-height:1.6;color:var(--body)}
+.cookies p strong{color:var(--ink);font-weight:600}
+.cookies p a{color:var(--blue-deep);text-decoration:underline;text-underline-offset:3px}
+.cookies-btns{display:flex;gap:10px;justify-content:flex-end}
+.cookies-btns .btn{padding:11px 20px;font-size:14px}
+@media(max-width:560px){
+  .cookies{left:12px;right:12px;bottom:12px;padding:18px;border-radius:14px}
+  .cookies-btns{gap:8px}
+  .cookies-btns .btn{flex:1;justify-content:center}
+}
+@media(prefers-reduced-motion:reduce){.cookies{transition:none;opacity:1;transform:none}}
+
 /* ---------- accesibilidad ---------- */
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
