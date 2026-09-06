@@ -13,42 +13,70 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/style.css">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Columna de Agua">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Parámetros del agua en un acuario marino | Columna de Agua">
+<meta property="og:description" content="Valores objetivo de salinidad, temperatura, alcalinidad, calcio, magnesio, nitrato y fosfato, con qué frecuencia medirlos y cómo corregir.">
+<meta property="og:url" content="https://columnadeagua.com/guias/parametros-agua-acuario-marino/">
+<meta property="og:image" content="https://columnadeagua.com/assets/img/kit-test.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://columnadeagua.com/"}, {"@type": "ListItem", "position": 2, "name": "Guías", "item": "https://columnadeagua.com/guias/"}, {"@type": "ListItem", "position": 3, "name": "Parámetros del agua: valores objetivo y cada cuánto medir", "item": "https://columnadeagua.com/guias/parametros-agua-acuario-marino/"}]}</script>
 </head>
 <body>
-<nav class="nav"><div class="wrap nav-in">
-  <a class="brand" href="/" aria-label="Columna de Agua — Acuariofilia sin límites"><img src="/assets/logo.png" alt="Columna de Agua" width="276" height="176"></a>
-  <div class="gm"><a class="gm-item" href="/">
-      <span class="gm-glow" aria-hidden="true"></span>
-      <span class="gm-face"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><path d="M9 21V12h6v9"/></svg><span>Inicio</span></span>
-      <span class="gm-back" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><path d="M9 21V12h6v9"/></svg><span>Inicio</span></span>
-    </a>
-    <a class="gm-item" href="/equipo/">
-      <span class="gm-glow" aria-hidden="true"></span>
-      <span class="gm-face"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0 5 5l-9.4 9.4a2.1 2.1 0 0 1-3-3Z"/><path d="m17 3 4 4"/></svg><span>Equipo</span></span>
-      <span class="gm-back" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0 5 5l-9.4 9.4a2.1 2.1 0 0 1-3-3Z"/><path d="m17 3 4 4"/></svg><span>Equipo</span></span>
-    </a>
-    <a class="gm-item" href="/guias/" aria-current="page">
-      <span class="gm-glow" aria-hidden="true"></span>
-      <span class="gm-face"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h6a3 3 0 0 1 2 1 3 3 0 0 1 2-1h6v15h-6a3 3 0 0 0-2 1 3 3 0 0 0-2-1H4Z"/><path d="M12 5v15"/></svg><span>Guías</span></span>
-      <span class="gm-back" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h6a3 3 0 0 1 2 1 3 3 0 0 1 2-1h6v15h-6a3 3 0 0 0-2 1 3 3 0 0 0-2-1H4Z"/><path d="M12 5v15"/></svg><span>Guías</span></span>
-    </a>
-    <a class="gm-item" href="/especies/">
-      <span class="gm-glow" aria-hidden="true"></span>
-      <span class="gm-face"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 12c0 3-4 5.5-7 5.5-2.2 0-4-1.2-4-1.2s1.4-1.7 1.4-4.3S5.5 7.7 5.5 7.7 7.3 6.5 9.5 6.5c3 0 7 2.5 7 5.5Z"/><path d="m16.5 12 4-3v6Z"/><circle cx="9" cy="10.5" r=".9" fill="currentColor"/></svg><span>Especies</span></span>
-      <span class="gm-back" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 12c0 3-4 5.5-7 5.5-2.2 0-4-1.2-4-1.2s1.4-1.7 1.4-4.3S5.5 7.7 5.5 7.7 7.3 6.5 9.5 6.5c3 0 7 2.5 7 5.5Z"/><path d="m16.5 12 4-3v6Z"/><circle cx="9" cy="10.5" r=".9" fill="currentColor"/></svg><span>Especies</span></span>
-    </a>
-    <a class="gm-item" href="/sobre-columna-de-agua/">
-      <span class="gm-glow" aria-hidden="true"></span>
-      <span class="gm-face"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v6c0 4.4 3 7.6 7 9 4-1.4 7-4.6 7-9V6Z"/><path d="m9 12 2 2 4-4"/></svg><span>Método</span></span>
-      <span class="gm-back" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v6c0 4.4 3 7.6 7 9 4-1.4 7-4.6 7-9V6Z"/><path d="m9 12 2 2 4-4"/></svg><span>Método</span></span>
-    </a></div>
-  <div class="navicons">
-    <a class="iconbtn" href="/equipo/" aria-label="Buscar equipo"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></a>
-    <a class="iconbtn" href="/#kit" aria-label="Kit de arranque"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.5-7-9.2A4 4 0 0 1 12 8a4 4 0 0 1 7 2.8C19 15.5 12 20 12 20Z"/></svg></a>
+<a class="sr-only" href="#principal">Saltar al contenido</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="Columna de Agua, inicio"><img src="/assets/logo.png" alt="Columna de Agua" width="276" height="176"></a>
+    <nav class="nav-links" aria-label="Principal"><a href="/">Inicio</a><a href="/equipo/">Equipo</a><a href="/guias/" aria-current="page">Guías</a><a href="/especies/">Especies</a><a href="/sobre-columna-de-agua/">Método</a></nav>
+    <div class="nav-acts">
+      <button class="icon-btn" data-search type="button" aria-label="Buscar en la web"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+      <a class="nav-cta" href="/#kit">Kit de arranque</a>
+      <button class="icon-btn burger" id="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
   </div>
-</div></nav>
+</header>
 
-<main class="article">
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-bg" data-cerrar></div>
+  <div class="drawer-panel" role="dialog" aria-modal="true" aria-label="Menú de navegación">
+    <div class="drawer-top">
+      <a class="brand" href="/"><img src="/assets/logo.png" alt="Columna de Agua" width="276" height="176"></a>
+      <button class="icon-btn" data-cerrar type="button" aria-label="Cerrar menú"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+    </div>
+    <nav class="drawer-nav" aria-label="Navegación móvil">
+      <a href="/"><span>Inicio<span class="d">Portada</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a><a href="/equipo/"><span>Equipo<span class="d">17 análisis de equipo</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a><a href="/guias/"><span>Guías<span class="d">Montaje, ciclado y mantenimiento</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a><a href="/especies/"><span>Especies<span class="d">14 fichas de fauna y coral</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a><a href="/sobre-columna-de-agua/"><span>Método<span class="d">Cómo analizamos</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+      <p class="drawer-sep">Atajos</p>
+      <div class="drawer-cta">
+        <a class="btn btn-primary btn-block" href="/#kit">Ver el kit de arranque</a>
+        <a class="btn btn-ghost btn-block" href="/equipo/">Ver análisis de equipo</a>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<div class="search" id="search" aria-hidden="true">
+  <div class="search-bg" data-cerrar-search></div>
+  <div class="search-box" role="dialog" aria-modal="true" aria-labelledby="search-titulo">
+    <div class="search-head">
+      <p id="search-titulo">Buscar en Columna de Agua</p>
+      <button class="icon-btn" data-cerrar-search type="button" aria-label="Cerrar búsqueda"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="search-field">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <label class="sr-only" for="search-input">Buscar equipo, guías o especies</label>
+      <input id="search-input" type="search" placeholder="Refractómetro, ciclado, pez payaso…" autocomplete="off" role="combobox" aria-expanded="true" aria-controls="search-res">
+    </div>
+    <div class="search-res" id="search-res" role="listbox" aria-label="Resultados de búsqueda"></div>
+    <div class="search-tips">
+      <span><kbd>↑</kbd><kbd>↓</kbd> navegar</span>
+      <span><kbd>Enter</kbd> abrir</span>
+      <span><kbd>Esc</kbd> cerrar</span>
+    </div>
+  </div>
+</div>
+
+<main id="principal" class="article">
   <p class="crumb"><a href="/guias/">Guías</a> &nbsp;/&nbsp; Mantenimiento</p>
   <img class="guia-badge" src="/assets/ico/parametros.png" alt="" width="320" height="320">
   <h1>Parámetros del agua: valores objetivo y cada cuánto medir</h1>
@@ -59,35 +87,37 @@
   <h2>Los valores, y qué frecuencia pide cada uno</h2><p><strong>Salinidad, 1.026 sg (35 ppt).</strong> Semanal, con refractómetro. Es el parámetro que afecta a todos los demás.</p><p><strong>Temperatura, 25 a 26 °C.</strong> Diaria, de un vistazo. Lo importante no es el valor sino que no oscile más de un grado al día.</p><p><strong>Alcalinidad, 8 a 9 dKH.</strong> Semanal si hay coral. Es la que se mueve más rápido y la primera en avisar.</p><p><strong>Calcio, 400 a 450 ppm.</strong> Cada dos semanas con coral.</p><p><strong>Magnesio, 1300 a 1400 ppm.</strong> Cada dos o tres semanas. Es el que sostiene a los otros dos: con el magnesio bajo, calcio y alcalinidad no se dejan corregir.</p><p><strong>Nitrato, 2 a 10 ppm. Fosfato, 0,03 a 0,1 ppm.</strong> Cada dos o tres semanas. Cero absoluto no es el objetivo: el coral necesita algo de nutrientes.</p><h2>El error de corregir varias cosas a la vez</h2><p>Cuando algo va mal, la reacción típica es dosificar tres productos el mismo día. Si mejora, no sabes cuál funcionó; si empeora, tampoco.</p><p>Cambia una variable, espera una semana, vuelve a medir. Es lento y es la única forma de aprender cómo responde tu acuario.</p><h2>El orden de corrección</h2><p>Primero magnesio, después alcalinidad, después calcio. Si el magnesio está bajo, subir la alcalinidad hace que precipite y vuelva a caer, y te pasas semanas dosificando sin resultado.</p><h2>Qué no hace falta medir</h2><p>Con un acuario de blandos y LPS y cambios de agua regulares no necesitas medir yodo, estroncio, potasio ni el resto de la lista. Los cambios de agua reponen esos oligoelementos.</p><p>Empiezan a tener sentido en arrecifes muy cargados con dosificación automatizada, y para entonces ya sabrás por qué los mides.</p>
   <div class="next"><p class="micro">Sigue leyendo</p><a href="/equipo/kits-test-agua-acuario-marino/">→ Kits de test: cuáles necesitas de verdad</a><a href="/equipo/refractometro-o-densimetro/">→ Con qué medir la salinidad</a><a href="/guias/algas-en-acuario-marino/">→ Algas: identificar la causa</a></div>
 </main>
-<footer><div class="wrap">
-  <div class="f-in">
-    <div class="f-brand">
-      <a class="brand" href="/" aria-label="Columna de Agua — Acuariofilia sin límites"><img src="/assets/logo.png" alt="Columna de Agua" width="276" height="176"></a>
-      <p>Análisis de equipo y guías de acuariofilia marina. Sin patrocinios.</p>
+<footer>
+  <div class="wrap">
+    <div class="f-in">
+      <div class="f-brand">
+        <a class="brand" href="/"><img src="/assets/logo.png" alt="Columna de Agua" width="276" height="176"></a>
+        <p>Análisis de equipo y guías de acuariofilia marina. Ninguna marca nos paga.</p>
+      </div>
+      <div class="fcol"><h4>Equipo</h4>
+        <a href="/equipo/pantallas-led-nano-reef/">Iluminación</a>
+        <a href="/equipo/mejores-skimmers-acuario-marino/">Filtración</a>
+        <a href="/equipo/refractometro-o-densimetro/">Medición</a>
+        <a href="/equipo/sal-acuario-marino-comparativa/">Sal y agua</a>
+        <a href="/equipo/">Todos los análisis</a>
+      </div>
+      <div class="fcol"><h4>Guías</h4>
+        <a href="/guias/montar-nano-reef-paso-a-paso/">Montaje</a>
+        <a href="/guias/ciclado-acuario-marino/">Ciclado</a>
+        <a href="/guias/parametros-agua-acuario-marino/">Parámetros</a>
+        <a href="/guias/mantenimiento-semanal-acuario-marino/">Mantenimiento</a>
+        <a href="/especies/">Fichas de especie</a>
+      </div>
+      <div class="fcol"><h4>El sitio</h4>
+        <a href="/sobre-columna-de-agua/">Cómo analizamos</a>
+        <a href="/contacto/">Contacto</a>
+        <a href="/aviso-legal-y-privacidad/">Aviso legal</a>
+        <a href="/aviso-legal-y-privacidad/#privacidad">Privacidad</a>
+        <a href="/aviso-legal-y-privacidad/#afiliacion">Afiliación</a>
+      </div>
     </div>
-    <div class="fcol"><h4>Equipo</h4>
-      <a href="/equipo/pantallas-led-nano-reef/">Iluminación</a>
-      <a href="/equipo/mejores-skimmers-acuario-marino/">Filtración</a>
-      <a href="/equipo/refractometro-o-densimetro/">Medición</a>
-      <a href="/equipo/sal-acuario-marino-comparativa/">Sal y agua</a>
-      <a href="/#kit">Kit de arranque</a>
-    </div>
-    <div class="fcol"><h4>Guías</h4>
-      <a href="/guias/ciclado-acuario-marino/">Ciclado</a>
-      <a href="/guias/parametros-agua-acuario-marino/">Parámetros</a>
-      <a href="/guias/algas-en-acuario-marino/">Algas</a>
-      <a href="/guias/presupuesto-acuario-marino-completo/">Presupuesto</a>
-      
-    </div>
-    <div class="fcol"><h4>El sitio</h4>
-      <a href="/sobre-columna-de-agua/">Cómo analizamos</a>
-      <a href="/contacto/">Contacto</a>
-      <a href="/aviso-legal-y-privacidad/">Aviso legal</a>
-      <a href="/aviso-legal-y-privacidad/#privacidad">Privacidad</a>
-      <a href="/aviso-legal-y-privacidad/#afiliacion">Afiliación</a>
-    </div>
+    <p class="f-note"><strong>&copy; 2026 Columna de Agua.</strong> Columna de Agua participa en el Programa de Afiliados de Amazon EU, un programa de publicidad para afiliados diseñado para ofrecer a sitios web un modo de obtener comisiones por publicidad, publicitando e incluyendo enlaces a Amazon.es. Como Afiliado de Amazon, obtenemos ingresos por las compras adscritas que cumplen los requisitos aplicables. Esto no supone ningún coste adicional para ti y no condiciona nuestras recomendaciones.</p>
   </div>
-  <p class="f-note"><strong>© 2026 Columna de Agua.</strong> Columna de Agua participa en el Programa de Afiliados de Amazon EU, un programa de publicidad para afiliados diseñado para ofrecer a sitios web un modo de obtener comisiones por publicidad, publicitando e incluyendo enlaces a Amazon.es. Como Afiliado de Amazon, obtenemos ingresos por las compras adscritas que cumplen los requisitos aplicables. Esto no supone ningún coste adicional para ti y no condiciona nuestras recomendaciones.</p>
-</div></footer>
-</body>
+</footer>
+<script src="/assets/app.js" defer></script></body>
 </html>
