@@ -22,7 +22,6 @@
 <meta property="og:image" content="https://columnadeagua.com/assets/img/osmosis.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://columnadeagua.com/"}, {"@type": "ListItem", "position": 2, "name": "Equipo", "item": "https://columnadeagua.com/equipo/"}, {"@type": "ListItem", "position": 3, "name": "Osmosis inversa: por qué el agua de partida lo decide todo", "item": "https://columnadeagua.com/equipo/osmosis-inversa-para-acuario/"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Puedo usar agua del grifo en un acuario marino?", "acceptedAnswer": {"@type": "Answer", "text": "No es recomendable. Aunque sea potable, aporta fosfatos, silicatos y cloro en cantidades que en un volumen pequeño con coral se traducen en algas y en fauna estresada."}}, {"@type": "Question", "name": "¿Qué TDS debe tener el agua para un acuario de arrecife?", "acceptedAnswer": {"@type": "Answer", "text": "El objetivo es 0 ppm a la salida del equipo. Valores por encima indican que la membrana está perdiendo rendimiento o que la resina, si la usas, se ha agotado."}}, {"@type": "Question", "name": "¿Sirve el agua de osmosis embotellada o de garrafa?", "acceptedAnswer": {"@type": "Answer", "text": "Puede servir para arrancar o para una urgencia, pero no conviene depender de ella: no siempre sabes su TDS real ni cómo se ha almacenado, y a medio plazo sale cara frente a un equipo propio."}}, {"@type": "Question", "name": "¿Cada cuánto hay que cambiar los filtros de una osmosis?", "acceptedAnswer": {"@type": "Answer", "text": "Los prefiltros de sedimentos y carbón por calendario, según la recomendación del fabricante y tu consumo. La membrana no por tiempo, sino cuando el TDS de salida sube de forma sostenida."}}, {"@type": "Question", "name": "¿Es normal que la osmosis tire agua por el desagüe?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. El agua de rechazo arrastra lo que la membrana ha retenido y es parte del funcionamiento normal. La proporción entre agua producida y agua rechazada varía según el equipo y la presión de entrada."}}, {"@type": "Question", "name": "¿Necesito osmosis si solo voy a tener peces marinos, sin coral?", "acceptedAnswer": {"@type": "Answer", "text": "Es menos crítico que con coral, pero sigue siendo recomendable: los nutrientes del agua de red alimentan algas igual, y en volúmenes pequeños se nota."}}]}</script>
 </head>
 <body>
 <a class="sr-only" href="#principal">Saltar al contenido</a>
@@ -106,16 +105,18 @@
 
   <h3>Qué valor buscamos</h3>
   <p>El objetivo en acuariofilia marina es <strong>0 ppm a la salida</strong>. Con equipos de solo membrana es habitual encontrar valores muy bajos pero no exactamente cero, y ahí es donde entra la resina.</p>
-  <p>Como referencia orientativa: el agua de red en España suele moverse en un rango amplio según la zona, desde valores bajos en aguas blandas hasta varios cientos de ppm en zonas de agua muy dura. Mídelo tú mismo antes de comprar equipo, porque tu agua de entrada condiciona qué necesitas y cuánto van a durarte los consumibles.</p>
+  <p>El agua de red varía mucho de una zona a otra, e incluso a lo largo del año en la misma zona. No hay un valor típico que sirva de referencia general, así que la única cifra útil es la tuya: mídela antes de comprar equipo, porque condiciona qué necesitas y cuánto van a durarte los consumibles.</p>
 
   <h3>Cómo se mide</h3>
   <p>Con un medidor de TDS de bolsillo, que cuesta poco y se usa en segundos. Algunos equipos lo traen integrado en línea, con dos sondas que permiten ver la entrada y la salida a la vez, que es lo cómodo.</p>
-  <p>Mide siempre en dos puntos: la entrada, para saber qué está recibiendo el equipo, y la salida, para saber qué está entregando. La diferencia entre ambos valores es el porcentaje de rechazo real de tu membrana, y su caída en el tiempo es lo que te avisa de que hay que sustituirla.</p>
+  <p>Mide siempre en dos puntos: la entrada, para saber qué está recibiendo el equipo, y la salida, para saber qué está entregando. Con esos dos valores puedes calcular el <strong>porcentaje de rechazo</strong>, que es lo que indica el rendimiento de la membrana:</p>
+  <p class="formula">(TDS entrada − TDS salida) ÷ TDS entrada × 100</p>
+  <p>Un ejemplo con números redondos: si a la entrada mides 200 ppm y a la salida 6, el cálculo sería (200 − 6) ÷ 200 × 100, es decir un 97 % de rechazo. Lo relevante no es el número aislado sino su evolución: si repites la medición cada pocos meses en condiciones parecidas y el porcentaje va cayendo, la membrana está perdiendo capacidad. Ten en cuenta que el resultado varía con la temperatura del agua y la presión de entrada, así que compara mediciones hechas en condiciones similares.</p>
 
   <h2>Qué significan los GPD y cuántos necesitas</h2>
-  <p>GPD son galones por día, la unidad con la que los fabricantes expresan la producción. Un galón estadounidense equivale a unos 3,8 litros, así que un equipo de 100 gpd produce en torno a 380 litros diarios en condiciones ideales.</p>
-  <p>Y ahí está la trampa: <strong>esa cifra es teórica</strong>. Se mide a una presión y una temperatura de referencia que rara vez coinciden con las de una casa. Con agua fría y presión de red modesta, la producción real puede quedar bastante por debajo. Por eso el dato práctico no es el GPD nominal sino los litros por hora que consigues en tu instalación, que se comprueban con un recipiente y un reloj.</p>
-  <p>Para dimensionarlo, piensa en tu consumo real. Un nano de 54 litros con <a href="/guias/mantenimiento-semanal-acuario-marino/">cambios semanales del 10 al 15 %</a> gasta unos seis a ocho litros por semana, más la reposición de evaporación. Casi cualquier equipo doméstico cubre eso de sobra. Un equipo más grande no te da mejor agua: te la da antes.</p>
+  <p>GPD son galones por día, la unidad con la que los fabricantes expresan la producción. Un galón estadounidense equivale a unos 3,8 litros, así que sobre el papel un equipo de 100 gpd rondaría los 380 litros diarios.</p>
+  <p>Y ahí está la trampa: <strong>esa cifra es teórica</strong>. Se mide a una presión y una temperatura de referencia que rara vez coinciden con las de una casa. Con agua fría o presión de red baja, la producción real suele quedar por debajo, y cuánto depende de cada instalación. Por eso el dato práctico no es el GPD nominal sino los litros por hora que consigues en tu instalación, que se comprueban con un recipiente y un reloj.</p>
+  <p>Para dimensionarlo, piensa en tu consumo real. Un nano de unos 50 o 60 litros con <a href="/guias/mantenimiento-semanal-acuario-marino/">cambios semanales del 10 al 15 %</a> necesita del orden de seis a ocho litros por semana, más lo que repongas de evaporación, que varía según la época del año y si el acuario está tapado. Es un consumo que la mayoría de equipos domésticos cubren sin dificultad. Un equipo más grande no te da mejor agua: te la da antes.</p>
 
   <h2>La etapa DI: cuándo compensa</h2>
   <p>La resina desionizadora es un cartucho de intercambio iónico que se coloca después de la membrana y retiene lo que esta ha dejado pasar. Es lo que lleva el TDS a cero de forma fiable.</p>
@@ -125,12 +126,12 @@
   <h2>Consumibles y cuándo cambiarlos</h2>
   <p>Un equipo de osmosis tiene cuatro elementos con vida útil distinta. Estos son los criterios de sustitución, sabiendo que la duración real depende por completo de tu agua de entrada y de cuánta agua produzcas:</p>
   <ul>
-    <li><strong>Filtro de sedimentos.</strong> El más frecuente. Se cambia cuando se ve sucio o cuando notas caída de caudal.</li>
-    <li><strong>Filtro de carbón.</strong> Protege la membrana del cloro, así que agotarlo no solo empeora el agua: acorta la vida de la pieza más cara del equipo. Se cambia por calendario, no por aspecto.</li>
-    <li><strong>Membrana.</strong> La pieza cara y la más duradera. Su indicador no es el tiempo sino el TDS: cuando el rechazo cae de forma sostenida, toca.</li>
+    <li><strong>Filtro de sedimentos.</strong> Suele ser el que se sustituye con más frecuencia. Se cambia cuando se ve sucio o cuando notas caída de caudal, y en aguas con muchas partículas dura menos.</li>
+    <li><strong>Filtro de carbón.</strong> Protege la membrana del cloro, así que agotarlo no solo empeora el agua: acorta la vida de la pieza más cara del equipo. Conviene guiarse por la pauta que indique el fabricante y por tu consumo, no por su aspecto: puede estar agotado sin verse sucio.</li>
+    <li><strong>Membrana.</strong> Suele ser la pieza más cara y la de mayor duración. Su indicador no es el calendario sino el TDS: cuando el porcentaje de rechazo cae de forma sostenida, toca sustituirla.</li>
     <li><strong>Resina desionizadora</strong>, si la tienes. Se agota y muchas cambian de color al hacerlo. Su indicador es el TDS de salida subiendo por encima de cero.</li>
   </ul>
-  <p>La regla que resume todo esto: <strong>los prefiltros se cambian por calendario y la membrana por medición</strong>. Anota la fecha de cada sustitución en algún sitio, porque a los ocho meses nadie se acuerda.</p>
+  <p>El criterio que resume todo esto: <strong>los prefiltros se guían por el calendario y la membrana por la medición</strong>. Anota la fecha de cada sustitución en algún sitio, porque a los ocho meses nadie se acuerda.</p>
 
   <h2>Mantenimiento</h2>
   <p>Poco, pero constante. Mide el TDS de salida cada vez que produzcas agua: son diez segundos y es tu sistema de alarma. Si el equipo va a estar semanas parado, conviene tener en cuenta que una membrana que se seca se deteriora, así que producir algo de agua periódicamente le sienta mejor que el abandono.</p>
@@ -143,13 +144,13 @@
   <p><strong>Comprar un equipo más grande de la cuenta.</strong> Más producción no significa mejor agua, y sí más espacio ocupado.</p>
 
   <h2>Qué mirar antes de comprar</h2>
-  <p>Por orden de importancia real:</p>
+  <p>Antes de comparar modelos, ordena los criterios. Estos son los que de verdad cambian tu experiencia a los dos años, por orden de importancia:</p>
   <ul>
-    <li><strong>Que puedas medir el TDS</strong>, con medidor integrado o de bolsillo. Sin esto, el resto da igual.</li>
-    <li><strong>Disponibilidad de recambios.</strong> Un equipo con filtros de formato estándar es mucho más barato de mantener a los tres años que uno con cartuchos propietarios.</li>
-    <li><strong>Espacio e instalación.</strong> Necesita toma de agua y desagüe. Mídelo antes, no después.</li>
-    <li><strong>Etapas.</strong> Cuatro es lo habitual; la quinta suele ser la resina.</li>
-    <li><strong>Producción.</strong> El último criterio, no el primero.</li>
+    <li><strong>Que puedas medir el TDS.</strong> Con medidor integrado o de bolsillo, da igual. Sin medición no sabes si el equipo cumple, y una membrana agotada sigue produciendo agua con normalidad. Si un equipo no lo trae, súmale el precio de un medidor al comparar.</li>
+    <li><strong>Disponibilidad y formato de los recambios.</strong> Es el criterio más olvidado y el que más dinero mueve a largo plazo. Un equipo con cartuchos de formato extendido se mantiene con piezas fáciles de encontrar; uno con cartuchos propietarios te ata al fabricante. Antes de comprar, busca cuánto cuesta el juego de recambio.</li>
+    <li><strong>Dónde lo vas a poner.</strong> Necesita toma de agua y desagüe. Mide el hueco bajo el fregadero o en el lavadero antes de pedir nada, y comprueba que puedas acceder a los cartuchos sin desmontar medio mueble.</li>
+    <li><strong>Etapas, y qué hace cada una.</strong> Cuatro es lo habitual: sedimentos, carbón, membrana y postfiltro. La quinta suele ser la resina. Desconfía de equipos que suman etapas sin explicar su función.</li>
+    <li><strong>Producción.</strong> El último criterio, no el primero. Comprueba antes tu consumo semanal real y verás que el margen sobra.</li>
   </ul>
 
   <h2>Las opciones</h2>
@@ -170,13 +171,25 @@
       <div class="buyrow"><a class="gbtn gbtn-alt" href="https://www.amazon.es/dp/B00439MYYE?tag=alex19910c-21" rel="sponsored nofollow noopener" target="_blank">Ver en Amazon</a><span class="disc">Enlace de afiliado</span></div>
     </div>
 
+  <h3>Las dos opciones, en corto</h3>
+  <div class="specs">
+    <div><b>4 etapas · para quién</b><span>Agua blanda, peces y coral blando</span></div>
+    <div><b>4 etapas · a favor</b><span>Sin consumible extra</span></div>
+    <div><b>4 etapas · en contra</b><span>Depende de la membrana</span></div>
+    <div><b>5 etapas · para quién</b><span>Agua dura o coral duro</span></div>
+    <div><b>5 etapas · a favor</b><span>TDS a cero más fiable</span></div>
+    <div><b>5 etapas · en contra</b><span>La resina se agota</span></div>
+  </div>
+  <p>La diferencia entre ambos no es la calidad del agua cuando todo está nuevo: con una membrana en buen estado y agua de entrada favorable, los dos pueden dar valores muy bajos. La diferencia está en <strong>qué pasa cuando las condiciones no acompañan</strong>: agua de entrada dura, membrana envejecida o exigencia mayor por parte del coral. Ahí la resina actúa de red de seguridad, a cambio de un consumible más.</p>
+
   <h2>Qué elegiría según tu caso</h2>
-  <p><strong>Si tu agua es blanda y tienes peces y blandos:</strong> el equipo de cuatro etapas con medidor. Cubre el consumo de un nano de sobra, el medidor te avisa de cuándo actuar y no añades un consumible más. Es lo que compraría yo en esa situación.</p>
-  <p><strong>Si tu agua es dura o mantienes coral duro:</strong> el equipo con resina. La diferencia de precio se recupera evitando un solo episodio de algas, y con SPS el margen de tolerancia es menor. Los valores objetivo están en la <a href="/guias/parametros-agua-acuario-marino/">guía de parámetros</a>.</p>
-  <p><strong>Si todavía no tienes acuario:</strong> no compres osmosis aún. Compra primero un medidor de TDS de bolsillo, mide tu agua de red y decide con ese dato. Cuesta muy poco y evita comprar de más.</p>
+  <p>Todo lo anterior sirve para llegar a esta decisión. Estos son los tres escenarios en los que se resume casi cualquier caso:</p>
+  <p><strong>Agua de entrada blanda, acuario con peces y coral blando.</strong> El equipo de cuatro etapas con medidor. Cubre el consumo de un nano con holgura, el medidor te avisa de cuándo actuar y no añades un consumible más al mantenimiento. En esa situación es lo que compraría yo, y no vería motivo para pagar por la resina.</p>
+  <p><strong>Agua de entrada dura, o coral duro en el acuario.</strong> El equipo con resina. Con SPS el margen de tolerancia es menor, y con agua dura la membrana trabaja más forzada. Aquí la resina deja de ser un extra y pasa a ser lo que sostiene el TDS a cero cuando la membrana empieza a ceder. Los valores objetivo del sistema están en la <a href="/guias/parametros-agua-acuario-marino/">guía de parámetros</a>.</p>
+  <p><strong>Todavía no tienes acuario.</strong> No compres osmosis aún. Compra un medidor de TDS de bolsillo, mide tu agua de red y decide con ese dato en la mano. Cuesta poco, y es la diferencia entre elegir con criterio y elegir por catálogo. Si además estás en fase de planificación, la <a href="/guias/montar-nano-reef-paso-a-paso/">guía de montaje</a> te sitúa en qué momento hace falta cada cosa.</p>
 
   <h2>Cuándo no merece la pena gastar más</h2>
-  <p>No pagues por producción extra. Salvo que mantengas varios acuarios, la diferencia entre un equipo y otro se traduce en llenar el bidón en menos tiempo, no en mejor agua.</p>
+  <p>Piénsalo dos veces antes de pagar por producción extra. Si mantienes un solo acuario pequeño, más caudal suele traducirse en llenar el bidón antes, no en obtener mejor agua.</p>
   <p>No pagues por etapas adicionales cuyo cometido no entiendas. Un equipo de siete etapas orientado a consumo humano puede incluir remineralización, que es exactamente lo contrario de lo que quieres: volver a meter minerales en un agua que has vaciado a propósito.</p>
   <p>Y no pagues por un equipo de gama alta si tu agua de red ya es blanda y tu acuario es pequeño. Ese dinero rinde mucho más en <a href="/equipo/pantallas-led-nano-reef/">iluminación</a> o en <a href="/equipo/kits-test-agua-acuario-marino/">tests fiables</a>.</p>
 
@@ -186,7 +199,7 @@
   <h3>¿Qué TDS debe tener el agua para un acuario de arrecife?</h3>
   <p>El objetivo es 0 ppm a la salida del equipo. Valores por encima indican que la membrana está perdiendo rendimiento o que la resina, si la usas, se ha agotado.</p>
   <h3>¿Sirve el agua de osmosis embotellada o de garrafa?</h3>
-  <p>Puede servir para arrancar o para una urgencia, pero no conviene depender de ella: no siempre sabes su TDS real ni cómo se ha almacenado, y a medio plazo sale cara frente a un equipo propio.</p>
+  <p>Puede servir para arrancar o para una urgencia. Como solución permanente tiene dos pegas: no siempre sabes su TDS real ni cómo se ha almacenado, y el coste depende mucho de tu consumo y de dónde la compres, así que conviene echar cuentas con tus propios litros antes de decidir.</p>
   <h3>¿Cada cuánto hay que cambiar los filtros de una osmosis?</h3>
   <p>Los prefiltros de sedimentos y carbón por calendario, según la recomendación del fabricante y tu consumo. La membrana no por tiempo, sino cuando el TDS de salida sube de forma sostenida.</p>
   <h3>¿Es normal que la osmosis tire agua por el desagüe?</h3>
