@@ -201,4 +201,63 @@
       });
     });
   })();
+
+  /* ---------- 7. medición GA4 ---------- */
+  (function(){
+    function ev(nombre,datos){
+      if(typeof window.gtag==='function') window.gtag('event',nombre,datos||{});
+    }
+    var pagina=location.pathname;
+    function seccion(href){
+      if(href.indexOf('/equipo/')===0) return 'equipo';
+      if(href.indexOf('/guias/')===0) return 'guias';
+      if(href.indexOf('/especies/')===0) return 'especies';
+      return 'otros';
+    }
+    function donde(el){
+      var s=el.closest('section[id]'); if(s) return s.id;
+      if(el.closest('.kit')) return 'kit';
+      if(el.closest('.hero-in')) return 'hero';
+      if(el.closest('.pick-box')) return 'analisis';
+      if(el.closest('.drawer')) return 'menu';
+      if(el.closest('footer')) return 'footer';
+      return 'cuerpo';
+    }
+    d.addEventListener('click',function(e){
+      var a=e.target.closest('a'); if(!a) return;
+      var href=a.getAttribute('href')||'';
+
+      /* clic de afiliación */
+      if(href.indexOf('amazon.')>-1){
+        var asin=(href.match(/\/dp\/([A-Z0-9]{10})/)||[])[1]||'';
+        var caja=a.closest('.pick-box')||a.closest('.pcard')||a.closest('.kit-row');
+        var nombre=caja&&caja.querySelector('h3')?caja.querySelector('h3').textContent.trim():
+                   (caja&&caja.querySelector('.n')?caja.querySelector('.n').textContent.trim():a.textContent.trim());
+        var cat=caja&&caja.querySelector('.cat')?caja.querySelector('.cat').textContent.trim():'';
+        ev('affiliate_click',{product:nombre.slice(0,90),asin:asin,category:cat.slice(0,40),page:pagina,placement:donde(a)});
+        return;
+      }
+      if(href.charAt(0)!=='/') return;
+
+      /* navegación interna por tipo de destino */
+      if(a.closest('.hero-btns')){ ev('hero_cta_click',{destino:href,page:pagina}); return; }
+      if(a.closest('.kit')){ ev('kit_click',{destino:href,page:pagina,placement:donde(a)}); return; }
+      var s=seccion(href);
+      if(s==='equipo')   ev('analysis_click',{destino:href,page:pagina,placement:donde(a)});
+      else if(s==='guias')   ev('guide_click',{destino:href,page:pagina,placement:donde(a)});
+      else if(s==='especies') ev('species_click',{destino:href,page:pagina,placement:donde(a)});
+    },true);
+
+    /* búsqueda interna: una sola vez por consulta, al dejar de escribir */
+    var tBusq=null, ultima='';
+    if(sInput) sInput.addEventListener('input',function(){
+      clearTimeout(tBusq);
+      tBusq=setTimeout(function(){
+        var q=sInput.value.trim();
+        if(q.length<3||q===ultima) return;
+        ultima=q;
+        ev('internal_search',{search_term:q.slice(0,80),resultados:sRes.querySelectorAll('a').length,page:pagina});
+      },900);
+    });
+  })();
 })();
