@@ -438,7 +438,7 @@ section+section{padding-top:0}
 .article h3{font-size:clamp(17px,2.1vw,19px);font-weight:600;margin:30px 0 10px}
 .article ul{padding-left:22px;margin:0 0 22px}
 .article li{margin-bottom:11px;font-size:clamp(15.5px,1.7vw,17px);line-height:1.7}
-.article a:not(.btn):not(.gbtn){color:var(--blue-deep);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.article a:not(.btn):not(.gbtn):not(.ver):not(.mini){color:var(--blue-deep);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
 
 .formula{font-family:var(--mono);font-size:clamp(14px,1.7vw,16px);text-align:center;color:var(--ink);
   background:var(--soft-2);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:0 0 22px;
